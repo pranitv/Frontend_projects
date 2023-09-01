@@ -1,0 +1,118 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaScript for Everyone:DOM</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+    }
+
+    .year {
+        font-size: 4rem;
+        color: rgb(218, 60, 218);
+    }
+
+    .wrapper h2 {
+        text-decoration: underline;
+        font-weight: normal;
+    }
+
+    .items {
+        height: 30px;
+        width: 500px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 5px;
+        list-style: none;
+    }
+
+    .time {
+        height: 30px;
+        width: 300px;
+        background-color: aqua;
+        font-size: 1.5rem;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <h1>Asabeneh Yetayeh challenges in <span class="year" id="year-text">2023</span></h1>
+        <h2>30DaysOfJavaScript Challenge</h2>
+        <span class="time" id="time-box"></span>
+        <ul>
+            <li class="items">30DaysOfPython Challenge Done</li>
+            <li class="items">30DaysOfJavaScript Challenge Ongoing</li>
+            <li class="items">30DaysOfReact Challenge Coming</li>
+            <li class="items">30DaysOfFullStack Challenge Coming</li>
+            <li class="items">30DaysOfDataAnalysis Challenge Coming</li>
+            <li class="items">30DaysOfReactNative Challenge Coming</li>
+            <li class="items">30DaysOfMachineLearning Challenge Coming</li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const items = document.getElementsByClassName('items')
+    for (let item of items) {
+        text = item.textContent
+        if (text.includes('Done')) {
+            item.style.backgroundColor = 'green'
+        }
+        else if (text.includes('Ongoing')) {
+            item.style.backgroundColor = 'yellow'
+        }
+        else {
+            item.style.backgroundColor = 'red'
+        }
+    }
+
+    function generateRandomColor(){
+        const letters = '0123456789ABCDEF'
+        let color = '#'
+        for (let i=0;i<6;i++){
+            color += letters[Math.floor(Math.random()*16)]
+        }
+        return color
+    }
+
+    function updateTime() {
+        let date = new Date()
+        const months = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+        let day = String(date.getDay()).padStart(2,'0')
+        let hours = String(date.getHours()).padStart(2,'0')
+        let minutes = String(date.getMinutes()).padStart(2,'0')
+        let seconds = String(date.getSeconds()).padStart(2,'0')
+
+        const randomColor = generateRandomColor()
+        document.getElementById('time-box').textContent = `${months[date.getMonth() + 1]} ${day},${date.getFullYear()} ${hours}:${minutes}:${seconds}`
+        document.getElementById('time-box').style.backgroundColor = randomColor
+        document.getElementById('year-text').style.backgroundColor = randomColor
+    }
+
+    setInterval(updateTime,1000)
+
+    updateTime()
+
+</script>
