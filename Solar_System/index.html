@@ -12,22 +12,26 @@
     <h1>Calculate weight of an object on a planet</h1>
     <div class="inputs">
         <input type="text" id="mass" placeholder="Mass in Kilogram">
-        <select class="planets">
-            <option value="earth">Earth</option>
-            <option value="pluto">Pluto</option>
-            <option value="neptune">Neptune</option>
-            <option value="mars">Mars</option>
-            <option value="saturn">Saturn</option>
-            <option value="venus">Venus</option>
+        <select class="planets" id="planets">
+            <option value="Earth">Earth</option>
+            <option value="Pluto">Pluto</option>
+            <option value="Neptune">Neptune</option>
+            <option value="Mars">Mars</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Venus">Venus</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Moon">Moon</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Mercury">Mercury</option>
         </select>
         <button type="submit">Calculate Weight</button>
     </div>
 </header>
 
 <body>
-    <div class="massinfo">
-        <div class="massRequired">
-            Mass is Required
+    <div class="massinfo" id="mass-info">
+        <div class="selectedImage" id="imageBox">
+            
         </div>
     </div>
 </body>
