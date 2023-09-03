@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+.heading h1,h3 {
+    margin: 0;
+}
+
+.heading h1{
+    font-weight: normal;
+    font-size: 3rem;
+    color: rgb(242, 169, 59);
+}
+
+.heading h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: column  ;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-buttons {
+    margin-top: 20px;
+}
+
+.option-buttons button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    margin-left: 10px;
+    background-color:rgb(242, 169, 59);
+}
+
+.optionText {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chart {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}

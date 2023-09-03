@@ -25,13 +25,13 @@ h1{
 .inputs input{
     height: 30px;
     width: 200px;
-    color: grey;
+    color: rgb(21, 19, 19);
 }
 
 .inputs select{
     height: 35px;
     width: 150px;
-    color: grey;
+    color: rgb(24, 21, 21);
 }
 
 .inputs button{
