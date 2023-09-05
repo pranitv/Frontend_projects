@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <script src="scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script type="module" src="scripts/main.js"></script>
+    </script>
     <title>World Countries Data Visualization</title>
 </head>
 
@@ -18,17 +20,17 @@
         </div>
         <div class="options" id="chartOptions">
             <div class="option-buttons">
-                <button type="button">Population</button>
-                <button type="button">Language</button>
+                <button type="submit" id="population">Population</button>
+                <button type="submit" id="language">Language</button>
             </div>
-            <div class="optionText">
-                10 Most populated countries in the world
+            <div class="optionText" id="optionText">
+                10 Most spoken languages in the world
             </div>
         </div>
     </header>
-    <canvas class="chart" id="chart">
-        
-    </canvas>
+    <div class="chartCanvas" id="charts">
+
+    </div>
 
 </body>
 

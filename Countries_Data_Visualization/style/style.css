@@ -54,11 +54,17 @@ body{
     margin-bottom: 10px;
 }
 
-.chart {
+.chartCanvas {
     display: flex;
-    height: auto;
-    width: 100%;
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     background-color: rgb(243, 243, 243);
+}
+
+.chartCanvas canvas {
+    width: 100px;
 }
