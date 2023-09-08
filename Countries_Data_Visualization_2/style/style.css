@@ -48,6 +48,10 @@ header {
     width: fit-content;
 }
 
+.option-buttons button:active {
+    scale: 0.95;
+}
+
 .search-fields{
     display: flex;
     justify-content: center;
