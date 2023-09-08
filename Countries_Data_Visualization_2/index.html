@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script type="module" src="scripts/main.js"></script>
+    </script>
+    <title>World Countries Data Visualization</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading" id="heading">
+            <h1>WORLD COUNTRIES LIST</h1>
+            <h3>Total Number of Countries: 193</h3>
+            <span id="info"></span>
+        </div>
+        <div class="option-buttons">
+            <button type="button" id="startsWith">STARTING WORD</button>
+            <button type="button" id="searchWith">SEARCH WITH ANY WORD</button>
+            <button type="button" id="sort">
+                AZ&#8595
+            </button>
+        </div>
+        <div class="search-fields">
+            <input type="text" id="searchText" placeholder="Search Country ...">
+            <i class="fas fa-search"></i>
+        </div>
+
+    </header>
+    <div class="countries" id="countryList">
+
+    </div>
+
+</body>
+
+</html>
