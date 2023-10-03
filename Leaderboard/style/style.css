@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.input-fields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-fields input {
+    width: 100px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.input-fields button {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(209, 183, 174);
+    color: white;
+    border: none;
+}
+
+.leaderboard {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.member {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: auto;
+    background-color: rgb(209, 183, 174);
+}
+
+.member-name {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.country-name ,.score, .options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-name {
+    width: 180px;
+}
+
+.score {
+    width: 180px;
+}
+.member-name span{
+    font-size: 0.6rem;
+    color: grey;
+}
+
+.options button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 2px;
+    border: none;
+}
+
+i{
+    color: rgb(230, 103, 103);
+}
+
+.input-fields button:active, .options button:active {
+    scale: 0.9;
+    background-color: rgb(200, 244, 133);
+}
+

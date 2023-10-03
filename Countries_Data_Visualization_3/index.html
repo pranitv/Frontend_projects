@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <title>World Countries Data</title>
+</head>
+<body>
+    <header>
+        <h1>World Countries Data</h1>
+        <h3>Currently, we have 250 countries</h3>
+        <span></span>
+    </header>
+    <div class="input-fields">
+        <input id="searchText" placeholder="search countries with name,city and languages">
+        <div class="options">
+            <button type="button" id="nameSort">NAME</button>
+            <button type="button" id="capitalSort">CAPITAL</button>
+            <button type="button" id="populationSort">POPULATION</button>
+            <a href="#charts"><i class="fa fa-bar-chart"></i></a>
+        </div>
+    </div>
+    <div class="countries" id="countryList">
+    </div>
+    <div class="option-buttons">
+        <button type="submit" id="population">Population</button>
+        <button type="submit" id="language">Language</button>
+    </div>
+    <div class="chartCanvas" id="charts">
+
+    </div>
+    
+</body>
+</html>
