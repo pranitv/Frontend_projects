@@ -64,7 +64,7 @@ header h3{
 .countries {
     display: flex;
     height: auto;
-    width: 100%;
+    width: auto;
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -81,6 +81,8 @@ header h3{
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    flex-grow: 1;
+    flex-basis: 200;
     opacity: 0.9;
     border: 1px solid black;
     margin: 15px 15px;
